@@ -1,0 +1,159 @@
+body{
+    background-color: #DCDCDC;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: darkblue;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    font-family:'Lucida Sans';
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #DCDCDC;
+    color: darkblue;
+  }
+   
+  .search {
+    background-color: #DCDCDC;
+    color: darkblue;
+  }
+  .barsearch{
+    display:  inline block;
+    width: 50%;
+    height: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+/***/
+.head {
+    text-align: "center";
+    direction: ltr;
+    font-family: 'Lucida Sans';
+    background-color: darkblue;
+    color: aliceblue;
+    width: 70%;
+    border-radius: 8px;
+    border: 2px solid black;
+    margin: auto;
+    padding: 10px;
+}
+
+.h {
+    margin: auto;
+    width: 60%;
+    border: 5px solid #FFFF00;
+    padding: 10px;
+    border-radius: 4px;
+    /* border: 2px solid;*/
+    width: 70%;
+    border: 2px solid;
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    border-collapse: collapse;
+    border-radius: 4px;
+}
+
+table {
+    border: 1px solid;
+}
+
+table {
+    width: 70%;
+}
+
+th {
+    height: 70px;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    height: 70px;
+}
+
+th {
+    text-align: left;
+}
+
+td {
+    height: 50px;
+    vertical-align: bottom;
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: left;
+}
+
+th,
+td {
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+    background-color: rgb(103, 143, 230);
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+th {
+    background-color: darkblue;
+    color: white;
+}
+
+#button:hover {
+    /*background-color: blue;*/
+    height: 40px; 
+    width: 140px;   
+    background-color:aliceblue;
+    color: darkblue; 
+    border-radius: 6px;
+    border: 2px solid darkblue;
+    size: larger;
+    font-family: 'Lucida Sans';
+   
+}
+#button{
+    height: 40px; 
+    width: 140px; 
+    background-color: darkblue;
+    color: aliceblue;
+    border: 2px solid black;
+    font-family: 'Lucida Sans';
+    size: larger;
+    border-radius: 6px; 
+}
+
+.bar {
+    margin: auto;
+    width: 70%;
+    height: 60%;
+    padding: 10px;
+    text-align: center;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update and delete student information</title>
+    <link rel="stylesheet" href="stylesheets/UpdateDeletecss.css">
+
+</head>
+
+<body class="body">
+
+    <ul>
+        <li><a class="active" href="HomePage.html">Home Page</a></li>
+        <li><a href="Add_New_Student_Page.html" class="add">Add New Student</a></li>
+        <li><a href="Activitystatus.html" class="view">View Student Active/Inactive</a></li>
+        <li><a href="UpdateDelete.html" class="update">Update Student</a></li>
+        <li><a href="SearchInfo_Table.html" class="search">Search For Active Students</a></li>
+        <li><a href="student_assignment.html" class="student">Student Assignment Department</a></li>
+    </ul>
+
+    <br>
+    <h3 align="center" class="head">Update and Delete Students Information</h3>
+    <form onsubmit="myFunction()" method="post">
+        <div>
+            <label id="ID" class="student_id">Student ID: </label>
+            <input type="number" placeholder="Student ID" class="IP1">
+
+            <br>
+
+            <label id="Name">Student Name: </label>
+            <input type="text" placeholder="xxxx-xxxxx-xxxxx" class="IP2">
+
+            <br>
+
+            <label id="DOB">Date of Birth: </label>
+            <input type="date" placeholder="D/M/Y" class="IP3">
+
+            <br>
+
+            <label id="GPA">Student GPA: </label>
+            <input type="text" placeholder="GPA" class="IP4">
+
+            <br>
+
+            <label id="Gender">Student Gender: </label>
+            <select name="Gender" class="IP5">
+                        <option>Select-Gender</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                        </select>
+
+            <br>
+
+            <label id="Level">Student Level: </label>
+            <select id="mySelect" name="Student Level" class="IP6" onchange="selectFunction()">
+                    <option>Level-1</option>
+                    <option>Level-2</option>
+                    <option>Level-3</option>
+                    <option>Level-4</option>
+               </select>
+
+
+            <br>
+
+            <label id="AS">Activity Status: </label>
+            <select name="Student Status " class="IP7" id="activity">
+                    <option  > Active</option>
+                    <option  > InActive</option>
+                </select>
+
+
+            <br>
+
+            <label id="Department">Student Department: </label>
+            <select name="Department" class="IP8" id="mydep">
+                    <option class="generaldep" > General </option>
+                    <option  class="dep"> CS</option>
+                    <option class="dep" > IS</option>
+                    <option  class="dep"> AI</option>
+                    <option  class="dep"> IT</option>
+                    <option  class="dep"> DS</option>
+                </select>
+
+
+
+            <br>
+
+            <label id="Email">Student Email: </label>
+            <input type="email" placeholder="Email" class="IP9">
+
+            <br>
+
+            <label id="Phone">Student Mobile Number: </label>
+            <input type="text" placeholder="Number" minlength="11" class="IP10">
+
+            <div class="button">
+                <input type="reset" value="Delete" autofocus class="SUBMIT_BUTTON">
+                <input type="submit" value="Update" autofocus class="SUBMIT_BUTTON" onclick="submitfun()">
+            </div>
+
+    </form>
+    <script src="Updatedelete.js"></script>
+    <script>
+        selectFunction();
+    </script>
+
+</body>
+
+</html>

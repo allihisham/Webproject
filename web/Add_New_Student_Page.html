@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Student Page</title>
+    <link rel="stylesheet" href="stylesheets/Add_new.css">
+
+    </script>
+</head>
+
+<body>
+    <!--Add New Student Page-->
+
+    <div class="nav">
+
+        <ul>
+            <li><a class="active" href="HomePage.html">Home Page</a></li>
+            <li><a href="Add_New_Student_Page.html" class="add">Add New Student</a></li>
+            <li><a href="Activitystatus.html" class="view">View Student Active/Inactive</a></li>
+            <li><a href="UpdateDelete.html" class="update">Update Student</a></li>
+            <li><a href="SearchInfo_Table.html" class="search">Search For Active Students</a></li>
+            <li><a href="student_assignment.html" class="student">Student Assignment Department</a></li>
+        </ul>
+    </div>
+
+    <br>
+    <h1 align="center" style="font-family: 'Lucida Sans';" class="firsthead">Add New Student Page</h1>
+
+    <hr class="separator">
+    <form class="add_form" name="myForm" onsubmit=" myFunction()">
+        <h2 class="MsgHeading">Please enter student's information to add a new student to our system</h2>
+        <div class="NEW_ID_DIV">
+            <label class="SID_LABEL">
+              Student's ID:
+          </label>
+            <span id="inv1" style="font-family:calibri;display:none;color: red;">*Invalid ID Please enter a valid input</span>
+            <input type="number" required oninvalid="alert('You must fill out the ID!');" placeholder="Student ID" class="IP1">
+
+        </div>
+        <br>
+        <hr>
+        <!------------------------------------------------------------------------------------------->
+        <div class="NEW_NAME_DIV">
+            <label class="SNAME_LABEL">
+                Student's Name:
+            </label>
+            <span id="inv2" style="font-family:calibri;display:none;color: red;">*Invalid Name Please enter a valid input</span>
+            <input type="text" required oninvalid="alert('You must fill out the Name!');" placeholder="Student Name" class="IP2">
+        </div>
+        <br>
+        <hr>
+        <!------------------------------------------------------------------------------------------->
+        <div class="NEW_DATE_DIV">
+            <label class="SDATE_LABEL">
+                Student's Date Of Birth:
+            </label>
+
+            <input type="date" required oninvalid="alert('You must fill out the Date of Birth!');" placeholder="DateOfBirth" class="IP3">
+        </div>
+        <br>
+        <hr>
+        <!------------------------------------------------------------------------------------------->
+        <div class="NEW_GPA_DIV">
+            <label class="SGPA_LABEL">
+                Student's GPA:
+            </label>
+            <span id="inv4" style="font-family:calibri;display:none;color: red;">*Invalid GPA Please enter a valid input</span>
+            <input type="text" required oninvalid="alert('You must fill out the GPA!');" placeholder="GPA" class="IP4">
+        </div>
+        <br>
+        <hr>
+        <!------------------------------------------------------------------------------------------->
+        <div class="NEW_GENDER_DIV">
+            <label class="SGENDER_LABEL">
+                Student's Gender:
+            </label>
+            <!--<p id="inv1" style="font-family:calibri;display:none">Invalid input</p>-->
+            <div class="IP5">
+                <input type="radio" value="Male" name="Gender" class="Gen"><label><b>Male</b></label>
+                <input type="radio" value="Female" name="Gender" class="Gen"><label><b>Female</b></label>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <!------------------------------------------------------------------------------------------->
+        <div class="NEW_LEVEL_DIV">
+            <label class="SLEVEL_LABEL">
+            Student's Level:
+        </label>
+            <select name="Student Level" class="IP6" id="mySelect" onchange="selectFunction()">
+             <option value="Level-1" id="l1"> Level-1</option>
+             <option value="Level-2" id="l2"> Level-2</option>
+             <option value="Level-3" id="l3"> Level-3</option>
+             <option value="Level-4" id="l4"> Level-4</option>
+        </select>
+        </div>
+        <br>
+        <hr>
+        <!------------------------------------------------------------------------------------------->
+        <!------------------------------------------------------------------------------------------->
+        <div class="NEW_STATUS_DIV">
+            <label class="SSTATUS_LABEL">
+            Student's Status:
+        </label>
+            <select name="Student Status" class="IP7" id="activity">
+             <option  value="Active"> Active</option>
+             <option  value="InActive"> InActive</option>
+         </select>
+        </div>
+        <br>
+        <hr>
+        <!----------------------------------------------------------------------------------------------------------->
+        <div class="NEW_DEP_DIV">
+            <label class="SDEP_LABEL">
+            Student's Department:
+        </label>
+            <select name="Department" class="IP8" id="mydep">
+            <option  class="generaldep"> General</option>
+             <option  class="dep"> CS</option>
+             <option  class="dep"> IS</option>
+             <option  class="dep"> AI</option>
+             <option  class="dep"> IT</option>
+             <option  class="dep"> DS</option>
+         </select>
+        </div>
+        <br>
+        <hr>
+        <!------------------------------------------------------------------------------------------------------------>
+        <div class="NEW_EMAIL_DIV">
+            <label class="SEMAIL_LABEL">
+            Student's email:
+        </label>
+            <span id="inv5" style="font-family:calibri;display:none;color: red;">*Invalid Email Please enter a valid input</span>
+            <input type="email" required oninvalid="alert('You must fill out the Email!');" placeholder="Email" class="IP9">
+        </div>
+        <br>
+        <hr>
+        <!---------------------------------------------------------------------------------------------------------->
+        <div class="NEW_MOBILE_DIV">
+            <label class="SMOBILE_LABEL">
+            Student's Mobile Number:
+        </label>
+            <span id="inv6" style="font-family:calibri;display:none;color: red;">*Invalid Number Please enter a valid input</span>
+            <input type="text" required placeholder="Number" minlength="11" class="IP10">
+        </div>
+        <br>
+        <!---------------------------------------------------------------------------------------------------------------->
+        <div class="button">
+            <input type="submit" value="Add" value="Submit" autofocus class="SUBMIT_BUTTON" onclick="submitfun()">
+        </div>
+    </form>
+    <script src="Add_new.js"></script>
+    <script>
+        selectFunction();
+    </script>
+</body>
+
+</html>

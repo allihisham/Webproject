@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="stylesheets/homepage.css">
+
+    <script>
+        alert('Welcome To Student Affairs Website(Home Page)');
+
+        function print1() {
+
+            alert('you will go to add new student page');
+        }
+
+        function print2() {
+
+            alert('you will go to view student activity page ');
+        }
+
+        function print3() {
+
+            alert('you will go to update student page');
+        }
+
+        function print4() {
+
+            alert('you will go to searching for active students page');
+        }
+
+        function print5() {
+
+            alert('you will go to student assignment department page');
+        }
+    </script>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li><a class="active" href="HomePage.html">Home Page</a></li>
+            <li><a onclick="print1()" href="Add_New_Student_Page.html" class="add">Add New Student</a></li>
+            <li><a onclick="print2()" href="Activitystatus.html" class="view">View Student Active/Inactive</a></li>
+            <li><a onclick="print3()" href="UpdateDelete.html" class="update">Update Student</a></li>
+            <li><a onclick="print4()" href="SearchInfo_Table.html" class="search">Search For Active Students</a></li>
+            <li><a onclick="print5()" href="student_assignment.html" class="student">Student Assignment Department</a></li>
+        </ul>
+    </div>
+
+    <br>
+
+    <div class="image1">
+        <img class="image1__img" src="img/Sun.jpg" alt="Bricks">
+
+        <div class="image1__title "><a onclick="print1()" href="Add_New_Student_Page.html">Add New Student</a></div>
+        <p class="image1__description">
+            Please click on the title to go to the page
+        </p>
+
+
+    </div>
+
+    <hr>
+
+    <div class="image2">
+        <img class="image2__img" src="img/Students.jpg" alt="Bricks">
+
+        <div class="image2__title"><a onclick="print2()" href="Activitystatus.html">View Student Active/Inactive</a></div>
+        <p class="image2__description">
+            Please click on the title to go to the page
+        </p>
+
+    </div>
+
+    <hr>
+
+    <div class="image3">
+        <img class="image3__img" src="img/Map.png" alt="Bricks">
+
+        <div class="image3__title"><a onclick="print3()" href="UpdateDelete.html">Update Student</a></div>
+        <p class="image3__description">
+            Please click on the title to go to the page
+        </p>
+
+    </div>
+
+    <hr>
+
+    <div class="image4">
+        <img class="image4__img" src="img/Web.jpg" alt="Bricks">
+
+        <div class="image4__title"><a onclick="print4()" href="SearchInfo_Table.html">Search For Active Students</a></div>
+        <p class="image4__description">
+            Please click on the title to go to the page
+        </p>
+
+    </div>
+    <hr>
+    <div class="image5">
+        <img class="image5__img" src="img/Lamp.png" alt="Bricks">
+
+        <div class="image5__title"><a onclick="print5()" href="student_assignment.html">Student Assignment Department</a></div>
+        <p class="image5__description">
+            Please click on the title to go to the page
+        </p>
+
+    </div>
+    <img src="https://www.studentaffairs.com/images/Student-Affairs.svg" alt="study" width="1000" height="300">
+</body>
+
+</html>

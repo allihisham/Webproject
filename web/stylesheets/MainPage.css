@@ -1,0 +1,271 @@
+ 
+.image1 {
+    position: relative;
+    width: 400px;
+}
+
+.image1__img {
+    display: block;
+    width: 100%;
+}
+
+.image1__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.image1__overlay--blur {
+    backdrop-filter: blur(5px);
+}
+
+.image1__overlay--primary {
+    background: darkblue;
+}
+
+.image1__overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.image1__overlay:hover {
+    opacity: 1;
+}
+
+.image1__overlay:hover > * {
+    transform: translateY(0);
+}
+
+.image1__title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.image1__description {
+    font-size: 1.25em;
+    margin-top: 0.25em;
+}
+
+
+/*-------------------------------------------------------------------------*/
+ 
+.image2 {
+    position: relative;
+    width: 400px;
+}
+
+.image2__img {
+    display: block;
+    width: 100%;
+}
+
+.image2__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.image2__overlay--blur {
+    backdrop-filter: blur(5px);
+}
+
+.image2__overlay--primary {
+    background: darkblue;
+}
+
+.image2__overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.image2__overlay:hover {
+    opacity: 1;
+}
+
+.image2__overlay:hover > * {
+    transform: translateY(0);
+}
+
+.image2__title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.image2__description {
+    font-size: 1.25em;
+    margin-top: 0.25em;
+}
+/*********************/
+.image3 {
+    position: relative;
+    width: 400px;
+}
+
+.image3__img {
+    display: block;
+    width: 100%;
+}
+
+.image3__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.image3__overlay--blur {
+    backdrop-filter: blur(5px);
+}
+
+.image3__overlay--primary {
+    background: darkblue;
+}
+
+.image3__overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.image3__overlay:hover {
+    opacity: 1;
+}
+
+.image3__overlay:hover > * {
+    transform: translateY(0);
+}
+
+.image3__title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.image3__description {
+    font-size: 1.25em;
+    margin-top: 0.25em;
+}
+
+/**/
+.image4 {
+    position: relative;
+    width: 400px;
+}
+
+.image4__img {
+    display: block;
+    width: 100%;
+}
+
+.image4__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.image4__overlay--blur {
+    backdrop-filter: blur(5px);
+}
+
+.image4__overlay--primary {
+    background: darkblue;
+}
+
+.image4__overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.image4__overlay:hover {
+    opacity: 1;
+}
+
+.image4__overlay:hover > * {
+    transform: translateY(0);
+}
+
+.image4__title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.image4__description {
+    font-size: 1.25em;
+    margin-top: 0.25em;
+}
+
+
+.image1,.image2,.image3,.image4{
+        margin: auto;
+        width: 60%;
+        border: 5px solid black  ;
+        padding: 10px;
+        border-radius: 8px; 
+}
+
+
+a{
+    text-decoration: none;
+}
+
+.head{
+    background: darkblue;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    border: 4px solid  black;
+    border-radius: 4px;
+}
+.head p{
+    font-style: italic;
+}
+
+.head h2{
+    font-style: italic;
+}
+
+
+
+
+ 

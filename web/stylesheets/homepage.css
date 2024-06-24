@@ -1,0 +1,181 @@
+body{
+  background-color: #DCDCDC;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: darkblue;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  font-family:'Lucida Sans';
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #DCDCDC;
+  color: darkblue;
+}
+ 
+.active {
+  background-color: #DCDCDC;
+  color: darkblue;
+}
+/*******************************************************************/
+
+
+.image1 {
+  position: relative;
+  width: 50%;
+}
+
+.image1__img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+
+.image1__title {
+  color: #DCDCDC;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.image1__description {
+  font-size: 1.25em;
+  margin-top: 0.25em;
+  font-family: 'Lucida Sans';
+}
+/*-------------------------------------------------------------------------*/
+
+.image2 {
+  position: relative;
+  width: 400px;
+}
+
+.image2__img {
+  display: block;
+  width: 100%;
+}
+
+
+.image2__title {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.image2__description {
+  font-size: 1.25em;
+  margin-top: 0.25em;
+  font-family: 'Lucida Sans';
+}
+/*------------------------------------*/
+.image3 {
+  position: relative;
+  width: 400px;
+}
+
+.image3__img {
+  display: block;
+  width: 100%;
+}
+
+
+
+.image3__title {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.image3__description {
+  font-size: 1.25em;
+  margin-top: 0.25em;
+  font-family: 'Lucida Sans';
+}
+
+/*-------------------------------**/
+
+.image4 {
+  position: relative;
+  width: 400px;
+}
+
+.image4__img {
+  display: block;
+  width: 100%;
+}
+
+
+
+.image4__title {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.image4__description {
+  font-size: 1.25em;
+  margin-top: 0.25em;
+  font-family: 'Lucida Sans';
+
+}
+/***************************************/
+.image5 {
+  position: relative;
+  width: 400px;
+}
+
+.image5__img {
+  display: block;
+  width: 100%;
+}
+
+.image5__title {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.image5__description {
+  font-size: 1.25em;
+  margin-top: 0.25em;
+  font-family: 'Lucida Sans';
+
+}
+
+/*---------------------*/
+
+.image1,.image2,.image3,.image4,.image5{
+      margin: auto;
+      width: 60%;
+    
+      border: 5px solid darkblue  ;
+      padding: 10px;
+      border-radius: 8px; 
+}
+
+a{
+  text-decoration: none;
+  font-family: 'Lucida Sans';
+  color: darkblue;
+}
+
+
+
